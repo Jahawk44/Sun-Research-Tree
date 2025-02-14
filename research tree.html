@@ -95,9 +95,10 @@
     <div id="toolbar">
       <button id="modeSwitch">Switch to Editor Mode</button>
       <button id="addNode" style="display: none;">Add Node</button>
+      <button id="addGroupBox" style="display: none;">Add Group</button>
       <button id="alignNodes" style="display: none;">Align Nodes</button>
       <button id="saveTree" style="display: none;">Save Tree</button>
-      <button id="loadTree" style="display: none;">Load Tree</button>
+      <button id="loadTree">Load Tree</button>
     </div>
     <!-- The drawing container -->
     <div id="container"></div>
@@ -112,6 +113,15 @@
         <button class="cancel" id="cancelNode">Cancel</button>
       </div>
     </div>
-    <script src="script.js"></script>
+    
+    <!-- Scripts: Order is important -->
+    <script src="globals.js"></script>
+    <script src="helpers.js"></script>
+    <script src="stage.js"></script>
+    <script src="nodes.js"></script>
+    <script src="connections.js"></script>
+    <script src="modal.js"></script>
+    <script src="tree.js"></script>
+    <script src="toolbar.js"></script>
   </body>
 </html>
